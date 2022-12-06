@@ -5,7 +5,7 @@ public class Human {
     private String jobTitle;
 
     public  Human(String name, int yearOfBirth,String jobTitle, String town) {
-        if (name == null){
+        if (name == null|| name.isEmpty()){
             this.name="Информация не указана";
         }   else this.name = name;
         if (yearOfBirth>=0) {
@@ -13,10 +13,10 @@ public class Human {
         }   else {
             this.yearOfBirth = Math.abs(yearOfBirth);
         }
-        if (jobTitle == null){
+        if (jobTitle == null||jobTitle.isEmpty()){
             this.jobTitle="Информация не указана";
         }   else this.jobTitle = jobTitle;
-        if (town == null){
+        if (town == null||town.isEmpty()){
             this.town="Информация не указана";
         }   else this.town=town;
 
